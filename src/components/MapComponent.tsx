@@ -9,15 +9,8 @@ interface MapComponentProps {
 
 const MapComponent: React.FC<MapComponentProps> = ({ lat, lon, userName }) => {
   return (
-    <MapContainer
-      center={[lat, lon]}
-      zoom={13}
-      className="w-full h-full rounded-xl"
-    >
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      />
+    <MapContainer className="w-full h-full rounded-xl">
+      <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
       <Marker position={[lat, lon]}>
         <Popup>
           {userName}: {lat}, {lon}

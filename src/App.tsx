@@ -1,7 +1,6 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import LocationSender from "./components/LocationSender";
 import LocationReceiver from "./components/LocationReceiver";
-import UserFeed from "./components/UserFeed";
 
 const queryClient = new QueryClient();
 
