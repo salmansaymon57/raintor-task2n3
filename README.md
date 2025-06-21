@@ -5,7 +5,9 @@ Setup instructions :
 Install dependencies - 
 1. npm install
 2. npm install @microsoft/signalr leaflet react-leaflet tailwindcss postcss autoprefixer -D
-start a development server -
+
+   
+Development server command :
 npm run dev
 
 
